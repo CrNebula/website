@@ -127,7 +127,7 @@
         <a-popover trigger="hover" placement="left">
           <template #content>
             <div class="tool-popover tool-popover--qr">
-              <img class="wechat-qr" src="https://lixiaoru.oss-cn-hangzhou.aliyuncs.com/wechat-qr.jpg" alt="WeChat QR Code" />
+              <img class="wechat-qr" src="/images/wechat-qr.jpg" alt="WeChat QR Code" />
             </div>
           </template>
           <a-button class="tool-btn" shape="circle" :icon="h(WechatOutlined)" />
