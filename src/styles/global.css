@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  background: #f6fbff;
+  color: #0f172a;
+}
+
+#app {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* 让 ant 容器在移动端更舒适 */
+.ant-layout-content {
+  min-height: 60vh;
+}
+
