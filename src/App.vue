@@ -93,7 +93,7 @@
             </svg>
           </div>
           <div class="footer-info">
-            <div class="footer-item"><span class="footer-key">Email:</span> xxx@yuantengjg.com</div>
+            <div class="footer-item"><span class="footer-key">Email:</span> vicky@yuantengjg.com</div>
             <div class="footer-item">
               <span class="footer-key">Address:</span> No. 2, Hequeling Street, Baitu Village, Zhongluotan
               Town, Baiyun District, Guangzhou City, China
