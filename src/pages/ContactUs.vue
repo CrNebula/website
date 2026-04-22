@@ -73,8 +73,8 @@ import type { FormInstance, Rule } from 'ant-design-vue/es/form';
 const formRef = ref<FormInstance>();
 const submitting = ref(false);
 
-// Formspree endpoint，示例：https://formspree.io/f/xxxxxxx
-const formspreeEndpoint = import.meta.env.VITE_FORMSPREE_ENDPOINT as string | undefined;
+// 改成你的邮箱地址，例如：https://formsubmit.co/support@yuanteng-precision.com
+const formsubmitUrl = 'https://formsubmit.co/vicky@yuantengjg.com';
 
 const formState = reactive({
   name: '',
@@ -89,41 +89,42 @@ const rules: Record<string, Rule[]> = {
     { required: true, message: 'Please enter your email' },
     { type: 'email', message: 'Please enter a valid email address' },
   ],
-  subject: [{ required: true, message: 'Please enter a subject' }],
-  message: [{ required: true, message: 'Please enter your message' }],
+  // subject: [{ required: true, message: 'Please enter a subject' }],
+  // message: [{ required: true, message: 'Please enter your message' }],
 };
 
-
 async function onSubmit() {
-  if (!formspreeEndpoint) {
-    message.error('Form service is not configured yet.');
-    return;
-  }
   if (submitting.value) return;
 
   submitting.value = true;
   try {
-    const response = await fetch(formspreeEndpoint, {
+    // 构建 application/x-www-form-urlencoded 格式的数据
+    const formData = new URLSearchParams();
+    formData.append('name', formState.name);
+    formData.append('email', formState.email);
+    formData.append('subject', formState.subject);
+    formData.append('message', formState.message);
+    // FormSubmit 控制参数
+    formData.append('_subject', `[Contact Form] ${formState.subject}`);
+    formData.append('_captcha', 'false');
+    formData.append('_template', 'table');
+    formData.append('_replyto', formState.email);
+
+    const response = await fetch(formsubmitUrl, {
       method: 'POST',
+      mode: 'no-cors',  // 保留 no-cors，避免跨域问题
       headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
+        'Content-Type': 'application/x-www-form-urlencoded',
       },
-      body: JSON.stringify({
-        name: formState.name,
-        email: formState.email,
-        subject: formState.subject,
-        message: formState.message,
-      }),
+      body: formData.toString(),
     });
 
-    if (!response.ok) {
-      throw new Error('submit failed');
-    }
-
-    message.success('Message submitted. We will contact you soon.');
+    // 注意：mode: 'no-cors' 时 response.ok 可能不准确
+    // FormSubmit 只要请求发出就算成功，实际结果看邮件
+    message.success('Message submitted successfully! We will contact you soon.');
     formRef.value?.resetFields();
-  } catch {
+  } catch (error) {
+    console.error('Form submission error:', error);
     message.error('Failed to send. Please try again later.');
   } finally {
     submitting.value = false;
@@ -251,4 +252,3 @@ async function onSubmit() {
 
 }
 </style>
-
