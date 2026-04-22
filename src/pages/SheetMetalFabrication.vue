@@ -463,7 +463,7 @@ const galleryImages = [
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
   gap: 14px;
 }
 
@@ -483,7 +483,7 @@ const galleryImages = [
 
 .gallery-img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 2 / 2;
   object-fit: cover;
   display: block;
 }
