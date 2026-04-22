@@ -112,7 +112,7 @@
 
         <a-popover trigger="hover" placement="left">
           <template #content>
-            <div class="tool-popover">Email: xxx@yuantengjg.com</div>
+            <div class="tool-popover">Email: vicky@yuantengjg.com</div>
           </template>
           <a-button class="tool-btn" shape="circle" :icon="h(MailOutlined)" />
         </a-popover>
