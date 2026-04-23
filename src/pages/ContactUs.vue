@@ -13,7 +13,7 @@
           <strong>Address:</strong> No. 2, Hequeling Street, Baitu Village,
           Zhongluotan Town, Baiyun District, Guangzhou City, China
         </p>
-        <p><strong>Email:</strong> support@yuanteng-precision.com</p>
+        <p><strong>Email:</strong>vicky@yuantengjg.com</p>
         <p><strong>Mobile:</strong> +86-18219157236</p>
         <p><strong>Whatsapp:</strong> 8618219157236</p>
       </div>
