@@ -2,31 +2,18 @@
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=1280, initial-scale=1.0" />
+    <meta id="app-viewport" name="viewport" content="width=1280, initial-scale=1, user-scalable=no" />
     <script>
       (function () {
         var designWidth = 1280;
-        var viewport = document.querySelector('meta[name="viewport"]');
+        var viewport = document.getElementById('app-viewport');
         if (!viewport) return;
-
-        function updateScale() {
-          var scale = Math.min(window.innerWidth / designWidth, 1);
-          viewport.setAttribute(
-            'content',
-            'width=' +
-              designWidth +
-              ', initial-scale=' +
-              scale +
-              ', maximum-scale=' +
-              scale +
-              ', minimum-scale=' +
-              scale
-          );
-        }
-
-        updateScale();
-        window.addEventListener('resize', updateScale);
-        window.addEventListener('orientationchange', updateScale);
+        var screenWidth = window.screen && window.screen.width ? window.screen.width : window.innerWidth;
+        var scale = Math.min(screenWidth / designWidth, 1);
+        viewport.setAttribute(
+          'content',
+          'width=' + designWidth + ', initial-scale=' + scale + ', user-scalable=no'
+        );
       })();
     </script>
     <title>Company Site</title>
