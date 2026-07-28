@@ -15,6 +15,7 @@
   "description": "",
   "dependencies": {
     "@ant-design/icons-vue": "^7.0.1",
+    "@vercel/analytics": "^2.0.1",
     "ant-design-vue": "^4.2.6",
     "vue": "^3.5.31",
     "vue-router": "^5.0.4"
