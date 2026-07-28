@@ -152,12 +152,16 @@ import {
   WechatOutlined,
   WhatsAppOutlined,
 } from '@ant-design/icons-vue';
+import { inject } from '@vercel/analytics';
 import TopTabs from '@/components/TopTabs.vue';
 
 type LogoVariant = 'tech' | 'minimal' | 'industry';
 
 // 切换品牌风格：'tech' | 'minimal' | 'industry'
 const logoVariant: LogoVariant = 'tech';
+
+// Initialize Vercel Analytics
+inject();
 
 </script>
 
