@@ -530,7 +530,9 @@
 	'/images/one/footer3.jpg',
 	'/images/one/footer4.jpg',
 	'/images/one/footer5.jpg',
-	'/images/one/footer6.jpg'
+	'/images/one/footer6.jpg',
+		'/images/one/footer7.png',
+	'/images/one/footer8.png'
 	] as const;
 
 	// 首页顶部三张图：与 public/images/one 下文件名一一对应
