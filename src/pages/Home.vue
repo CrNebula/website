@@ -548,7 +548,7 @@
 			alt: 'CNC Milling Parts',
 			title: 'CNC Milling Parts',
 			src: '/images/one/CNCMillingParts.jpg'
-		}
+		},
 		{
 			id: 'cnc-turned',
 			alt: 'CNC Turned Parts',
