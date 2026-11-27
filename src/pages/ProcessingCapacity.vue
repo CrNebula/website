@@ -114,21 +114,22 @@ const topImages = topImageFiles.map((file, idx) => ({
 
 /** Sheet Metal：按 1.0～1.4、2.0～2.4、3.0～3.4 排列（与 public 下文件名一致；2.2 资源为双点扩展名） */
 const SHEET_METAL_PART_IMAGES = [
-  '/images/Sheet Metal Parts/1.0.jpg',
-  '/images/Sheet Metal Parts/1.1.jpg',
-  '/images/Sheet Metal Parts/1.2.jpg',
-  '/images/Sheet Metal Parts/1.3.jpg',
-  '/images/Sheet Metal Parts/1.4.jpg',
-  '/images/Sheet Metal Parts/2.0.jpg',
-  '/images/Sheet Metal Parts/2.1.jpg',
-  '/images/Sheet Metal Parts/2.2..jpg',
-  '/images/Sheet Metal Parts/2.3.jpg',
-  '/images/Sheet Metal Parts/2.4.jpg',
-  '/images/Sheet Metal Parts/3.0.jpg',
-  '/images/Sheet Metal Parts/3.1.jpg',
-  '/images/Sheet Metal Parts/3.2.jpg',
-  '/images/Sheet Metal Parts/3.3.jpg',
-  '/images/Sheet Metal Parts/3.4.jpg',
+  '/images/Sheet Metal Parts/CNCMillingParts.jpg',
+  '/images/Sheet Metal Parts/2.jpg',
+  '/images/Sheet Metal Parts/3.jpg',
+  '/images/Sheet Metal Parts/4.jpg',
+  '/images/Sheet Metal Parts/5.jpg',
+  '/images/Sheet Metal Parts/6.jpg',
+  '/images/Sheet Metal Parts/7.jpg',
+  '/images/Sheet Metal Parts/8.jpg',
+  '/images/Sheet Metal Parts/9.jpg',
+  '/images/Sheet Metal Parts/10.jpg',
+  '/images/Sheet Metal Parts/11.jpg',
+  '/images/Sheet Metal Parts/12.jpg',
+  '/images/Sheet Metal Parts/13.jpg',
+  '/images/Sheet Metal Parts/14.jpg',
+  '/images/Sheet Metal Parts/15.jpg',
+  '/images/Sheet Metal Parts/16.jpg'
 ] as const;
 
 const categoryGalleries = [
