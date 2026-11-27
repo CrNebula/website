@@ -138,15 +138,16 @@ const categoryGalleries = [
     images: Array.from({ length: 9 }, (_, i) => `/images/CNC Micromachining/${i + 1}.jpg`),
   },
   {
+    id: 'milling-parts',
+    title: 'CNC Milling Parts',
+    images: SHEET_METAL_PART_IMAGES,
+  },
+  {
     id: 'cnc-turned',
     title: 'CNC Turned Parts',
     images: Array.from({ length: 9 }, (_, i) => `/images/CNC Turned Parts/${i + 1}.jpg`),
-  },
-  {
-    id: 'sheet-metal',
-    title: 'Sheet Metal Parts',
-    images: SHEET_METAL_PART_IMAGES,
-  },
+  }
+  
 ] as const;
 
 const bottomImages = [
