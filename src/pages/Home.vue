@@ -544,16 +544,16 @@
 			src: '/images/one/CNCMicromachining.jpg'
 		},
 		{
+			id: 'milling-parts',
+			alt: 'CNC Milling Parts',
+			title: 'CNC Milling Parts',
+			src: '/images/one/CNCMillingParts.jpg'
+		}
+		{
 			id: 'cnc-turned',
 			alt: 'CNC Turned Parts',
 			title: 'CNC Turned Parts',
 			src: '/images/one/CNCTurnedParts.jpg'
-		},
-		{
-			id: 'sheet-metal',
-			alt: 'Sheet Metal Parts',
-			title: 'Sheet Metal Parts',
-			src: '/images/one/SheetMetalParts.jpg'
 		}
 	];
 
