@@ -30,11 +30,10 @@ import {
 } from '@ant-design/icons-vue';
 import { useRoute, useRouter } from 'vue-router';
 
-type TabKey = 'home' | 'sheet-metal' | 'product' | 'company' | 'processing' | 'contact';
+type TabKey = 'home' | 'product' | 'company' | 'processing' | 'contact';
 
 const tabs: Array<{ key: TabKey; label: string; icon: object }> = [
   { key: 'home', label: 'Home', icon: HomeOutlined },
-  { key: 'sheet-metal', label: 'Sheet Metal Fabrication', icon: SafetyOutlined },
   { key: 'product', label: 'Product introduction', icon: AppstoreOutlined },
   { key: 'company', label: 'Company Profile', icon: BankOutlined },
   { key: 'processing', label: 'Processing capacity', icon: ToolOutlined },
